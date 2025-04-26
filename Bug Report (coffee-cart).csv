@@ -1,0 +1,39 @@
+﻿Issue Type,Summary,Preconditions,Steps to Reproduce,Data,Expected Result,Actual Result,Reporter,Created,Due date,Priority,Status
+Bug_001,Payment form submits when only whitespaces are entered into Name field of Payment window on the Cart page,1. User is on https://coffee-cart.app/cart                                                                                          2. At least one item is added to the cart,1. Click Total price box                                                                    In the popup window:                                                                2. Enter whitespaces only into Name field                                                      3. Enter valid Email                                                              4. Click Submit button,email - 'giorgio@gmail.com',ER-1: Error message “Name must contain only letters” is displayed below the Name field                                   ER-2: The form is not submitted,"AR-1: The form is submitted                                     AR-2: Success message: ""Thanks for your purchase. Please check your email for payment."" is displayed",atoyan_george,4/26/2025 9:45,4/27/2025 0:00,High,To Do
+Bug_002,Payment form submits when Name field exceed 256 characters of Payment window on the Cart page,"1. User is on https://coffee-cart.app/cart
+2. At least one item is added to the cart","1. Click Total price box
+In the popup window:
+2. Enter a string of more than 256 characters in the Name field
+3. Enter valid Email 
+4. Click Submit button",name - 'a'                                                 email - 'giorgio@gmail.com',"ER-1: Error message “Name must be less than or equal to 256 characters” is displayed below the Name field
+ER-2: The form is not submitted","AR-1: The form is submitted
+AR-2: Success message: ""Thanks for your purchase. Please check your email for payment."" is displayed",atoyan_george,4/26/2025 9:34,4/27/2025 0:00,High,To Do
+Bug_003,Payment form submits when incorrect format is entered into Email field of Payment window on the Cart page,"1. User is on https://coffee-cart.app/cart
+2. At least one item is added to the cart","1. Click Total price box
+In the popup window:
+2. Enter valid Name 
+3. Enter invalid Email
+4. Click Submit button",name - 'giorgio'                                    email - 'a@r',"ER-1: Error message “Invalid email address” is displayed below the Email field
+ER-2: The form is not submitted","AR-1: The form is submitted
+AR-2: The success message ""Thanks for your purchase. Please check your email for payment"" is displayed",atoyan_george,4/26/2025 9:26,4/27/2025 0:00,High,To Do
+Bug_004,The Payment popup does not close when clicking the cursor outside of it on the Cart page,"1. User is on https://coffee-cart.app/cart
+2. At least one item is added to the cart","1. Click Total price box
+In the popup window:
+2. Click the cursor outside of the popup window",,"The popup payment window closes
+",The popup payment window is not closed,atoyan_george,4/26/2025 9:09,4/27/2025 0:00,Low,To Do
+Bug_005,Payment form submits when only digits are entered into Name field of Payment window on the Cart page,"1. User is on https://coffee-cart.app/cart
+2. At least one item is added to the cart","1. Click Total price box
+In the popup window:
+2. Enter digits only into Name field
+3. Enter valid Email 
+4. Click Submit button",name - '12345'                               email - 'giorgio@gmail.com',"ER-1: Error message “Name must contain only letters” is displayed below the Name field
+ER-2: The form is not submitted","AR-1: The form is submitted
+AR-2: The success message ""Thanks for your purchase. Please check your email for payment"" is displayed",atoyan_george,4/26/2025 9:04,4/27/2025 0:00,High,To Do
+Bug_006,Payment form submits when special characters are entered into Name field of Payment window on the Cart page,"1. User is on https://coffee-cart.app/cart
+2. At least one item is added to the cart","1. Click Total price box
+In the popup window:
+2. Enter special characters only into Name field
+3. Enter valid Email 
+4. Click Submit button",name - '%^$#'                                                email - 'giorgio@gmail.com',"ER-1: Error message “Name must contain only letters” is displayed below the Name field
+ER-2: The form is not submitted","AR-1: The form is submitted
+AR-2: The message ""Thanks for your purchase. Please check your email for payment"" is displayed",atoyan_george,4/26/2025 9:00,4/27/2025 0:00,High,To Do
