@@ -1,0 +1,489 @@
+ID,Title,Created By,Created On,Section,Steps,Type
+C001,Verify that each coffee drink item displays the correct name and price on the menu,atoyan george,4/25/2025 6:59 PM,US001 – Browse Coffee Menu,"*Steps to Reproduce:*
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Verify for each item:
+     a. correct names matching product documentation 
+     b. correct prices matching product documentation and formatted as “$XX.XX“
+
+*Expected Result:*
+*-* The names of coffee drinks match the product documentation
+*-* The prices of coffee drinks match the product documentation and formatted as “$XX.XX“",Functional
+C002,Verify hovering over a coffee drink triggers movement and outline color change,atoyan george,4/25/2025 6:59 PM,US001 – Browse Coffee Menu,"*Steps to Reproduce:*
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Hover over a coffee drink
+
+*Expected Result:*
+*ER-1*: Coffee drink card slightly moves upward
+*ER-2*: The black outline around the mug changes to a gold color",Functional
+C003,Verify hovering over the top navigation menu tabs changes the text color and underlines it,atoyan george,4/25/2025 6:59 PM,US001 – Browse Coffee Menu,"*Steps to Reproduce:*
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Hover over the top navigation menu tabs
+
+*Expected Result:*
+*ER-1*: The text color of the hovered tab changes to grey
+*ER-2*: The text is underlined while hovered",Functional
+C004,Double-clicking the coffee title translate the text between Chinese and English,atoyan george,4/25/2025 6:59 PM,US001 – Browse Coffee Menu,"*Steps to Reproduce:*
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Double-click the coffee title (e.g., Espresso) to translate it into Chinese
+3. Double-click the coffee title again to translate it back to English
+
+*Expected Result:*
+*ER-1:* Upon first double-click, the coffee title translated into Chinese
+*ER-2:* Upon second double-click, the coffee title translated back into English",Functional
+C005,"Verify hovering over the """"Total"""" price box triggers the outline color change",atoyan george,4/25/2025 6:59 PM,US001 – Browse Coffee Menu,"*Steps to Reproduce:*
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Hover over the “Total” price box
+
+*Expected Result:*
+The black outline around the price box changes to a gold color",Functional
+C006,Add single item to the cart,atoyan george,4/25/2025 6:59 PM,US002 - Add Coffee to Cart,"*Steps to Reproduce:*
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Select any coffee drink (e.g., ‘Espresso’)
+3. Select 'Cart' tab
+
+*Expected Result:*
+The selected coffee drink (e.g., ‘Espresso’) is displayed on the cart with proper name, price, and quantity",Functional
+C007,Add multiple items to the cart,atoyan george,4/25/2025 6:59 PM,US002 - Add Coffee to Cart,"*Steps to Reproduce:*
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Select multiple coffee drinks (e.g., ‘Espresso’, ‘Cappuccino’)
+3. Select 'Cart' tab
+
+*Expected Result:*
+The selected items (e.g., ‘Espresso’, ‘Cappuccino’) are displayed on the cart with correct name, price, and quantity",Functional
+C008,Add the same item to the cart twice,atoyan george,4/25/2025 6:59 PM,US002 - Add Coffee to Cart,"*Steps to Reproduce:*
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Select the coffee drink (e.g., ‘Mocha’) twice
+3. Select 'Cart' tab
+
+*Expected Result:*
+The selected item displayed on the cart with the correct name, price, and quantity (e.g. 2)",Functional
+C009,"Verify hovering over the """"Total"""" price box displays quick cart preview",atoyan george,4/25/2025 6:59 PM,US002 - Add Coffee to Cart,"*Preconditions:*
+At least one item is added to the cart
+
+*Steps to Reproduce:*
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Select any coffee drink (e.g., ‘Americano’)
+3. Hover the cursor over the “Total” price box in the buttom-right corner
+
+*Expected Result:*
+The quick cart preview displays relevant information such as:
+-  the name of the selected coffee drink (e.g., ‘Americano’) 
+- quantity (e.g., 1)
+- two buttons: ‘+' and '-’",Functional
+C010,,,,,,
+C011,,,,,,
+C012,"Verify the """"Total"""" price box is updated correctly in the bottom-right corner on adding drinks",atoyan george,4/25/2025 6:59 PM,US002 - Add Coffee to Cart,"*Preconditions:* 
+The cart is initially empty
+
+*Steps to Reproduce:*
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Select any coffee drink (e.g., ‘Flat White’)
+
+*Expected Result:*
+The “Total” price box displays the correct value (e.g., $18.00) in the bottom-right corner",Functional
+C013,Verify cart icon updates when a drink is added,atoyan george,4/25/2025 6:59 PM,US002 - Add Coffee to Cart,"*Preconditions:*
+The cart is initially empty
+
+*Steps to Reproduce:*
+1. Go to [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. Select a coffee drink 
+
+*Expected Result:*
+The Cart tab updates reflecting the correct number of items (e.g., 1)",Functional
+C014,"Do not apply promo by clicking 'Nah, I'll skip' button in popup",atoyan george,4/25/2025 6:59 PM,US002 - Add Coffee to Cart,"*Steps to Reproduce:*
+
+1.Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2.Select any three coffee items (e.g., Espresso)
+3.Click ‘Yes, of course!’ button in promo popup
+
+*Expected Result:*
+*ER-1:* The promo does no apply to the cart
+*ER-2:* The promo popup closes without any discounted item being added 
+*ER-3:* The Total price box remains unchanged and reflect the price for 3 items
+*ER-4:* The *Cart* tab in top navigation bar remains unchanged",Functional
+C015,"Apply promo by clicking 'Yes, of course!' button in popup",atoyan george,4/25/2025 6:59 PM,US002 - Add Coffee to Cart,"*Steps to Reproduce:*
+
+1.Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2.Select any three coffee items (e.g., Espresso)
+3.Click ‘Yes, of course!’ button in promo popup
+
+*Expected Result:*
+*ER-1:* A discounted coffee item added to the cart
+*ER-2:* The discounted coffee item is visible in the Quick Cart Preview
+*ER-3:* The Total value of price box updates dynamically to reflect the new total (e.g., Total: $34.00)
+*ER-4:* The *Cart* tab in top navigation bar updates dynamically to show new item count (e.g., cart(4))",Functional
+C016,Verify a random promo pop up appears when every third item is added to the cart,atoyan george,4/25/2025 6:59 PM,US002 - Add Coffee to Cart,"*Steps to Reproduce:*
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Select any three coffee items 
+
+*Expected Result:*
+*ER-1:* A promo pop up appears 
+*ER-2:* A promo pip up contains:
+- message ‘It's your lucky day! Get an extra cup of Mocha for $4.'
+- a picture of the coffee item
+- two buttons: ‘Yes, of course!’ and ‘Nah, I’ll skip.’",Functional
+C017,Remove last item from the Quick Cart Preview using '-' button and verify UI update,atoyan george,4/25/2025 6:59 PM,US002 - Add Coffee to Cart,"*Preconditions:*
+
+1. At least one item added to the cart.
+
+*Steps to Reproduce:*
+
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Click any coffee drink (e.g., Espresso)
+3. Hover *Total* price box 
+4. Click '-' button next to coffee item
+
+*Expected Result:*
+*ER-1:* The coffee item disappears from Quick Cart Preview
+*ER-2:* The *Total* price box updates dynamically to reflect $0.00
+*ER-3*: The *Cart* tab in top navigation bar updates dynamically to reflect the  updated quantity (e.g., cart(0))",Functional
+C018,"Clicking the '-' button in Quick Cart Preview updates quantity, total price, and cart tab dynamically",atoyan george,4/25/2025 6:59 PM,US002 - Add Coffee to Cart,"*Preconditions:*
+1. At least two items added to the cart.
+
+*Steps to Reproduce:*
+
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Click any coffee drink (e.g., Espresso)
+3. Hover *Total* price box 
+4. Click '-' button next to coffee item
+
+*Expected Result:*
+*ER-1:* The quantity of the selected item updates dynamically (e.g., Espresso x 1)
+*ER-2:* The *Total* price box updates dynamically to reflect the decreased total (e.g., Total: $10.00)
+*ER-3*: The *Cart* tab in top navigation bar updates dynamically to reflect the  updated quantity (e.g., cart(1))",Functional
+C019,"Clicking the '+' button in Quick Cart Preview updates quantity, total price, and cart tab dynamically",atoyan george,4/25/2025 6:59 PM,US002 - Add Coffee to Cart,"*Steps to Reproduce:*
+
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Click any coffee drink (e.g., Espresso)
+3. Hover *Total* price box 
+4. Click '+' button next to coffee item
+
+*Expected Result:*
+*ER-1:* The quantity of the selected item updates dynamically (e.g., Espresso x 2)
+*ER-2:* The *Total* price box updates dynamically to reflect the increased total (e.g., Total: $20.00)
+*ER-3*: The *Cart* tab in top navigation bar updates dynamically to reflect the  updated quantity (e.g., cart(2))",Functional
+C020,Clicking 'No' button in the 'Add to Cart' dialog does not add the coffee item to the cart,atoyan george,4/25/2025 6:59 PM,US002 - Add Coffee to Cart,"*Preconditions:*
+1. The Cart page is empty
+
+*Steps to Reproduce:*
+
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Right-click any coffee drink (e.g., Espresso)
+3. Click *No* button on *‘Add to Cart’* dialog
+
+*Expected Result:*
+ER-1: The coffee item (e.g., Espresso) is not added to the cart
+ER-2: The ‘Add to Cart’ closes
+ER-3: The ‘cart’ tab in top navigation bar stays unchanged (e.g., cart(0))
+ER-4: The *Total* price box in right bottom corner stays unchanged 
+ER-5: The *Cart* page remain empty",Functional
+C021,Clicking 'Yes' button in the 'Add to Cart' dialog adds the coffee time to the cart,atoyan george,4/25/2025 6:59 PM,US002 - Add Coffee to Cart,"*Steps to Reproduce:*
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Right-click any coffee drink (e.g., Espresso)
+3. Click *Yes* button on *‘Add to Cart’* dialog
+
+*Expected Result:*
+ER-1: The coffee item (e.g., Espresso) is added to the cart
+ER-2: The ‘Add to Cart’ closes
+ER-3: The ‘cart’ tab in top navigation bar dynamically reflects the updated quantity of the selected coffee drink (e.g., cart(1))
+ER-4: The *Total* price box in right bottom corner correctly displays the total price value (e.g., Total: $10.00) of the selected item.
+ER-5: The selected coffee item is correctly represented on the *Cart* page with the right name, quantity, and price",Functional
+C022,Right-clicking the coffee item opens the 'Add To Cart' dialog,atoyan george,4/25/2025 6:59 PM,US002 - Add Coffee to Cart,"*Steps to Reproduce:*
+1. Go to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. Right-click the coffee item (e.g., Espresso)
+
+*Expected Result:*
+'Add To Cart' dialog appears with relevant information such as:
+ - the coffee item name (e.g., Add *Espresso* to the cart?) 
+ - two buttons: ‘Yes’ and ‘No’",Functional
+C023,Remove one of the multiple items from the cart page by clicking the '-' button,atoyan george,4/25/2025 6:59 PM,US003 - View and Edit Cart,"*Preconditions:*
+
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least two different coffee drinks (e.g., Espresso and Mocha) are added to the cart
+
+*Steps to Reproduce:*
+
+1. Locate the _Mocha_ item in the cart
+2. Click the '-' button next to the *Unit* value of the _Mocha_ item
+
+*Expected Result:*
+*ER-1:* The _Mocha_ item is removed from the cart
+*ER-2:* Any other item (e., Espresso) remains visible and unchanged 
+*ER-3:* The *Total* price box updates correctly and reflects the new total
+*ER-4:* The ‘cart’ tab updates accordingly (e.g., from cart(2) to cart(1))",Functional
+C024,Remove one of the multiple items from the cart page by clicking the 'x' button,atoyan george,4/25/2025 6:59 PM,US003 - View and Edit Cart,"*Preconditions:*
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least two different coffee drinks (e.g., Espresso and Mocha) are added to the cart
+
+*Steps to Reproduce:*
+1. Locate the _Mocha_ item in the cart
+2. Click the 'x' button next to the *Total* value of the _Mocha_ item
+
+*Expected Result:*
+*ER-1:* The _Mocha_ item is removed from the cart
+*ER-2:* Any other item (e., Espresso) remains visible and unchanged 
+*ER-3:* The *Total* price box updates correctly and reflects the new total
+*ER-4:* The ‘cart’ tab updates accordingly (e.g., from cart(2) to cart(1))",Functional
+C025,"Verify that clicking the """"+"""" button dynamically updated the item quantity, item total, and Total price box",atoyan george,4/25/2025 6:59 PM,US003 - View and Edit Cart,"*Preconditions:* 
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least one coffee drink is added to the cart
+
+*Steps to Reproduce:*
+1. Click the “+” button next to the *Unit* value
+
+*Expected Result:*
+*ER-1*: The *Unit* value updates accordingly (e.g., from $10.00 x 1 to $10.00 x 2)
+*ER-2*: The *Total* value (under the *Total* column) updates accordingly (e.g., from $10.00 to $20.00)
+*ER-3:* The *Total* price box value updates accordingly (e.g., from $10.00 to $20.00)
+*ER-4:* The ‘cart’ tab updates accordingly (e.g., from cart(1) to cart(2))",Functional
+C026,Cart becomes empty when clicking the 'x' button next to the Total value,atoyan george,4/25/2025 6:59 PM,US003 - View and Edit Cart,"*Preconditions:* 
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least one coffee drink is added to the cart
+
+*Steps to Reproduce:*
+1. Click the “x” button next to the *Total* value
+
+*Expected Result:*
+*ER-1*: The cart table disappears 
+*ER-2*: The *Total* price box is no longer shown
+*ER-3*: The message “No coffee, go add some.” is displayed",Functional
+C027,Cart becomes empty when quantity is reduced to zero,atoyan george,4/25/2025 6:59 PM,US003 - View and Edit Cart,"*Preconditions:*
+1. User is on [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+
+*Steps to Reproduce:*
+1. Select any coffee drink (e.g., Espresso)
+2. Click the ‘cart(1)’ tab in the top navigation menu
+3. Click the “-” button next to the *Unit* value
+
+*Expected Result:*
+*ER-1*: The cart table disappears 
+*ER-2*: The *Total* price box is no longer shown
+*ER-3*: The message “No coffee, go add some.” is displayed",Functional
+C028,Verify the cart page displays a structured table and necessary controls after an item is added,atoyan george,4/25/2025 6:59 PM,US003 - View and Edit Cart,"*Preconditions:*
+1. User is on [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+
+*Steps to Reproduce:*
+1. Select any coffee drink (e.g., Espresso)
+2. Click the ‘cart(1)’ tab in the top navigation menu
+
+*Expected Result:*
+*ER-1*: The table includes the following column headers, each correctly labeled:
+ * *Item* - displays the correct drink name (e.g., Espresso)
+ * *Unit* – displays unit price and quantity in the format: $10.00 x 1
+ * *Total* – displays the total price in the format: $10.00
+*ER-2*: A Total price box showing the overall sum in the format: $10.00
+*ER-3*: The “+” and “-” buttons are displayed next to the Unit value to increase and decrease quantity
+*ER-4*: The “X” (remove) button is displayed next to the *Total* value, allowing the removal from the cart",Functional
+C029,"Verify that the empty cart page displays the message """"No coffee, go add some.""""",atoyan george,4/25/2025 6:59 PM,US003 - View and Edit Cart,"*Preconditions:*
+1. User is on the [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+2. The cart is empty
+
+*Steps to Reproduce:*
+1. Click the ‘cart (0)’ tab in the top navigation menu
+
+*Expected Result:*
+*ER-1*: The message “No coffee, go add some” is displayed
+*ER-2*: The text is centered",Functional
+C030,Verify Name field does not accept special characters only,atoyan george,4/25/2025 6:59 PM,US004 - Complete Payment,"*Preconditions:*
+
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least one item is added to the cart
+
+*Steps to Reproduce:*
+
+1. Click *Total* price box
+In the _popup_ window:
+   2. Enter special characters only (e.g., ^%$#) into *Name* field 
+   3. Enter valid *Email* (e.g., [giorgio@gmail.com|mailto:giorgio@gmail.com])
+   4. Click *Submit* button
+
+*Expected Result:*
+*ER-1:* Error message “Name must contain only letters” is displayed below the *Name* field
+*ER-2:* The form is not submitted",Functional
+C031,Verify Name field does not accept digits only,atoyan george,4/25/2025 6:59 PM,US004 - Complete Payment,"*Preconditions:*
+
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least one item is added to the cart
+
+*Steps to Reproduce:*
+
+1. Click *Total* price box
+In the _popup_ window:
+2. Enter digits only (e.g., 12345) into *Name* field 
+3. Enter valid *Email* (e.g., giorgio@gmail.com)
+4. Click *Submit* button
+
+*Expected Result:*
+*ER-1:* Error message “Name must contain only letters” is displayed below the *Name* field
+*ER-2:* The form is not submitted",Functional
+C032,Verify the popup payment window closes when clicking outside of it,atoyan george,4/25/2025 6:59 PM,US004 - Complete Payment,"*Preconditions:*
+
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least one item is added to the cart
+
+*Steps to Reproduce:*
+
+1. Click *Total* price box
+In the _popup_ window:
+2. Click the cursor outside of the _popup_ window
+
+*Expected Result:*
+*ER-1:* The popup payment window closes 
+*ER-2:* The cart page is displayed",Functional
+C033,Verify the popup payment window closes when clicking the 'X' close button,atoyan george,4/25/2025 6:59 PM,US004 - Complete Payment,"*Preconditions:*
+
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least one item is added to the cart
+
+*Steps to Reproduce:*
+
+1. Click *Total* price box
+In the _popup_ window:
+2. Click '*X' close* button
+
+*Expected Result:*
+*ER-1:* The popup payment window closes 
+*ER-2:* The cart page is displayed",Functional
+C034,Verify error message appears when Email field left blank,atoyan george,4/25/2025 6:59 PM,US004 - Complete Payment,"*Preconditions:*
+
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least one item is added to the cart
+
+*Steps to Reproduce:*
+
+1. Click *Total* price box
+In the _popup_ window:
+2. Enter a valid *Name* (e.g., giorgio)
+3. Leave *Email* field empty
+4. Click *Submit* button
+
+*Expected Result:*
+Error message “Please, fill out this field” is displayed below the *Email* field",Functional
+C035,Verify error message appears when Name field left blank,atoyan george,4/25/2025 6:59 PM,US004 - Complete Payment,"*Preconditions:*
+
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least one item is added to the cart
+
+*Steps to Reproduce:*
+
+1. Click *Total* price box
+In the _popup_ window:
+2. Leave *Name* field empty
+3. Enter a valid *Email* (e.g., giorgio@gmail.com)
+4. Click *Submit* button
+
+*Expected Result:*
+Error message “Please, fill out this field” is displayed below the *Name* field",Functional
+C036,Verify error message appears when both fields are left blank,atoyan george,4/25/2025 6:59 PM,US004 - Complete Payment,"*Preconditions:*
+
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least one item is added to the cart
+
+*Steps to Reproduce:*
+
+1. Click *Total* price box
+In the _popup_ window:
+2. Leave *Name* field empty
+3. Leave *Email* field empty
+4. Click *Submit* button
+
+*Expected Result:*
+Error message “Please, fill out this field” is displayed below the *Name* and/or *Email* fields",Functional
+C037,Submit payment form with valid credentials and checkbox ticked,atoyan george,4/25/2025 6:59 PM,US004 - Complete Payment,"*Preconditions:*
+
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least one item is added to the cart
+
+*Steps to Reproduce:*
+
+1. Click *Total* price box
+In the _popup_ window:
+2. Enter a valid *Name* (e.g., giorgio)
+3. Enter a valid *Email* (e.g., g[iorgio@gmail.com)|mailto:giorgio@gmail.com]
+4. Tick the checkbox: “I would like to receive order updates and promotional messages.”
+5. Click *Submit* button
+
+*Expected Result:*
+*ER-1:* The user is automatically redirected to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+*ER-2:* The message “Thank for your purchase. Please check you email for payment” appears
+*ER-3:* The payment link is received",Functional
+C038,Submit payment form with valid credentials,atoyan george,4/25/2025 6:59 PM,US004 - Complete Payment,"*Preconditions:*
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least one item is added to the cart
+
+*Steps to Reproduce:*
+1. Click *Total* price box
+In the _popup_ window:
+  2. Enter a valid *Name* (e.g., giorgio)
+  3. Enter a valid *Email* (e.g., g[iorgio@gmail.com)|mailto:giorgio@gmail.com]
+  4. Click *Submit* button
+
+*Expected Result:*
+*ER-1:* The user is automatically redirected to [https://coffee-cart.app/|https://coffee-cart.app/|smart-link] 
+*ER-2:* The message “Thank for your purchase. Please check you email for payment” appears
+*ER-3:* The payment link is received",Functional
+C039,Verify payment popup window with content appears,atoyan george,4/25/2025 6:59 PM,US004 - Complete Payment,"*Preconditions:*
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least one item is added to the cart
+
+
+*Steps to Reproduce:*
+1. Click the *Total* price box
+
+*Expected Result:*
+The popup window appears with the following content and layout:
+*- Title:* Payment Details
+*- Instructional text:* We will send you a payment link via email.
+*- Name* input field
+*- Email* input field
+*- Checkbox:* I would like to receive order updates and promotional messages.
+*- Submit* button
+*- 'X'* close button in the top-right corner",Functional
+C040,Verify Email field does not accept invalid email value,atoyan george,4/25/2025 6:59 PM,US004 - Complete Payment,"*Preconditions:*
+
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least one item is added to the cart
+
+*Steps to Reproduce:*
+
+1. Click *Total* price box
+In the _popup_ window:
+2. Enter valid *Name* (e.g., giorgio)
+3. Enter invalid *Email* (e.g., ‘a@g’)
+4. Click *Submit* button
+
+*Expected Result:*
+*ER-1:* Error message “Invalid email address” is displayed below the *Email* field
+*ER-2:* The form is not submitted",Functional
+C041,Verify Name field does not accept more than 256 characters,atoyan george,4/25/2025 6:59 PM,US004 - Complete Payment,"*Preconditions:*
+
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least one item is added to the cart
+
+*Steps to Reproduce:*
+
+1. Click *Total* price box
+In the _popup_ window:
+2. Enter a string of more than 256 characters (e.g., “a” 257 times) in the *Name* field
+3. Enter valid *Email* (e.g., [giorgio@gmail.com|mailto:giorgio@gmail.com])
+4. Click *Submit* button
+
+*Expected Result:*
+*ER-1:* Error message “Name must be less than or equal to 256 characters” is displayed below the *Name* field
+*ER-2:* The form is not submitted",Functional
+C042,Verify Name field does not accept whitespaces only,atoyan george,4/25/2025 6:59 PM,US004 - Complete Payment,"*Preconditions:*
+
+1. User is on [https://coffee-cart.app/cart|https://coffee-cart.app/cart|smart-link] 
+2. At least one item is added to the cart
+
+*Steps to Reproduce:*
+
+1. Click *Total* price box
+In the _popup_ window:
+2. Enter whitespaces only into *Name* field 
+3. Enter valid *Email* (e.g., [giorgio@gmail.com|mailto:giorgio@gmail.com])
+4. Click *Submit* button
+
+*Expected Result:*
+*ER-1:* Error message “Name must contain only letters” is displayed below the *Name* field
+*ER-2:* The form is not submitted",Functional
